@@ -5,13 +5,6 @@ var alanBtnInstance = alanBtn({
     if (commandData.command === "go:back") {
       //call client code that will react on the received command
     }
-  },
-onCommand: function (commandData){
-//Funciones
-
-
-},
-  
-  
+  },  
   rootEl: document.getElementById("alan-btn"),
 });
