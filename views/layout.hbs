@@ -18,7 +18,18 @@
     <div class="alan-btn"></div>   <!--Alan AI integration -->
     <script type="text/javascript"
       src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
-    <script src="Alan Commands.js" charset="utf-8"> </script>
+    <script>
+      var alanBtnInstance = alanBtn({
+        key: "5a650989b2490214b1298798a8f358162e956eca572e1d8b807a3e2338fdd0dc/stage",
+        onCommand: function (commandData) {
+          if (commandData.command === "go:back") {
+            //call client code that will react on the received command
+          }
+        },
+        rootEl: document.getElementById("alan-btn"),
+        
+      });
+    </script>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
         <a href="/" class="navbar-brand">Appointment Service - Alan AI</a>
