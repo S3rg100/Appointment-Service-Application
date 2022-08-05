@@ -26,9 +26,19 @@
             //call client code that will react on the received command
           }
         },
+        onCommand: function (commandData){
+    AlanChangeSubject(commandData.command, commandData.payload)
+  },
         rootEl: document.getElementById("alan-btn"),
         
       });
+//Functions
+
+      function AlanChangeSubject(cmd, pyd){
+  if (cmd === 'AlanSubject'){
+    document.getElementById('Subject').value = pyd.AlanSubject
+        }
+ }
     </script>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
