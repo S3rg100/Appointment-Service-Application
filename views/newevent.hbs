@@ -15,13 +15,13 @@
     <div class="col">
       <div class="form-group">
         <label>Start</label>
-        <input class="form-control" name="ev-start" type="datetime-local" value="{{ newEvent.start }}">
+        <input class="form-control" name="ev-start" type="datetime-local" value="{{ newEvent.start }}" id="Start">
       </div>
     </div>
     <div class="col">
       <div class="form-group">
         <label>End</label>
-        <input class="form-control" name="ev-end" type="datetime-local" value="{{ newEvent.end }}">
+        <input class="form-control" name="ev-end" type="datetime-local" value="{{ newEvent.end }}" id="End">
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
     <label>Body</label>
     <textarea class="form-control" name="ev-body" rows="3" id="Body">{{ newEvent.body }}</textarea>
   </div>
-  <input class="btn btn-primary mr-2" type="submit" value="Create" />
+  <input class="btn btn-primary mr-2" type="submit" value="Create"/>
   <a class="btn btn-secondary" href="/calendar">Cancel</a>
 </form>
 <!-- </NewEventFormSnippet> -->
