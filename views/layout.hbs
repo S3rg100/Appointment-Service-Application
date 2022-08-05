@@ -26,6 +26,15 @@
             //call client code that will react on the received command
           }
         },
+        onButtonState: async function(status) {
+    if (status === 'ONLINE') {
+      if (!this.greetingWasSaid) {
+        await alanBtnInstance.activate();
+        alanBtnInstance.playText("");
+        this.greetingWasSaid = true
+      }
+    }
+  },
         onCommand: function (commandData){
     AlanChangeSubject(commandData.command, commandData.payload)
     AlanChangeAttendees(commandData.command, commandData.payload)
@@ -38,6 +47,7 @@
     AlanCancel(commandData.command)
 
   },
+  
         rootEl: document.getElementById("alan-btn"),
         
       });
