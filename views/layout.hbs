@@ -28,23 +28,33 @@
         },
         onCommand: function (commandData){
     AlanChangeSubject(commandData.command, commandData.payload)
+    AlanChangeBody(commandData.command, commandData.payload)
     AlanChangeAttendees(commandData.command, commandData.payload)
+
   },
         rootEl: document.getElementById("alan-btn"),
         
       });
 //Functions
 
-      function AlanChangeSubject(cmd, pyd){
-  if (cmd === 'AlanSubject'){
-    document.getElementById('Subject').value = pyd.AlanSubject
+    function AlanChangeSubject(cmd, pyd){
+      if (cmd === 'AlanSubject'){
+        document.getElementById('Subject').value = pyd.AlanSubject
+            }
+    }
+
+    function AlanChangeBody(cmd, pyd){
+      if (cmd === 'AlanBody'){
+        document.getElementById('Body').value = pyd.AlanBody
+            }
+    }
+    
+   function AlanChangeAttendees(cmd, pyd){
+    if (cmd === 'AlanAttendees'){
+      document.getElementById('Attendees').value = pyd.AlanAttendees
         }
  }
- function AlanChangeAttendees(cmd, pyd){
-  if (cmd === 'AlanAttendees'){
-    document.getElementById('Attendees').value = pyd.AlanAttendees
-        }
- }
+ 
     </script>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
