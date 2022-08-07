@@ -26,28 +26,12 @@
             //call client code that will react on the received command
           }
         },
-        onButtonState: async function(status) {
-    if (status === 'ONLINE') {
-      if (!this.greetingWasSaid) {
-        await alanBtnInstance.activate();
-        alanBtnInstance.playText("");
-        this.greetingWasSaid = true
-      }
-    }
-  },
         onCommand: function (commandData){
     AlanChangeSubject(commandData.command, commandData.payload)
     AlanChangeBody(commandData.command, commandData.payload)
     AlanChangeAttendees(commandData.command, commandData.payload)
-    AlanChangeStart(commandData.command, commandData.payload)
-    AlanChangeEnd(commandData.command, commandData.payload)
-    AlanOpenCalendar(commandData.command)
-    AlanOpenHome(commandData.command)
-    AlanNewEvent(commandData.command)
-    AlanCreate(commandData.command)
-    AlanCancel(commandData.command)
+
   },
-  
         rootEl: document.getElementById("alan-btn"),
         
       });
@@ -70,41 +54,7 @@
       document.getElementById('Attendees').value = pyd.AlanAttendees
         }
  }
- function AlanOpenCalendar(cmd){
-  if (cmd === 'AlanOpenCalendar'){
-    window.open('/calendar', '_top')
-        }
- }
- function AlanOpenHome(cmd){
-  if (cmd === 'AlanOpenHome'){
-    window.open('/', '_top')
-        }
- }
- function AlanNewEvent(cmd){
-  if (cmd === 'AlanNewEvent'){
-    window.open('/calendar/new', '_top')
-        }
- }
- function AlanChangeStart(cmd,pyd){
-  if (cmd === 'AlanStart'){
-    document.getElementById('Start').value = pyd.AlanStart
-        }
- }
- function AlanChangeEnd(cmd,pyd){
-  if (cmd === 'AlanEnd'){
-    document.getElementById('End').value = pyd.AlanEnd
-        }
- }
- function AlanCreate(cmd){
-  if (cmd === 'AlanCreate'){
-    document.getElementById("Create").click()
-        }
- }
- function AlanCancel(cmd){
-  if (cmd === 'AlanCancel'){
-    window.open('/calendar', '_top')
-        }
- }
+ 
     </script>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
