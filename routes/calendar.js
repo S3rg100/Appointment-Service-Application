@@ -36,7 +36,7 @@ router.get('/',
       // but in UTC. For example, for Pacific Standard Time, the time value would be
       // 07:00:00Z
       var weekStart = zonedTimeToUtc(startOfWeek(new Date()), timeZoneId.valueOf());
-      var weekEnd = addDays(weekStart, 7);
+      var weekEnd = addDays(weekStart, 20);
       console.log(`Start: ${formatISO(weekStart)}`);
 
       try {
