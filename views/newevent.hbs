@@ -2,6 +2,7 @@
      Licensed under the MIT License. -->
 
 <!-- <NewEventFormSnippet> -->
+<link rel="stylesheet" href="public\stylesheets\style.css">
 <form method="POST">
   <div class="form-group">
     <label>Subject</label>
@@ -29,33 +30,33 @@
     <label>Body</label>
     <textarea class="form-control" name="ev-body" rows="3" id="Body">{{ newEvent.body }}</textarea>
   </div>
-  <input class="btn btn-primary mr-2" type="submit" value="Create" id="Create"/>
-  <a class="btn btn-secondary" href="/calendar">Cancel</a>
+  <input class="btn btn-primary mr-2 bg-bluealan no-border" type="submit" value="Create" id="Create"/>
+  <a class="btn btn-secondary bg-bluealan no-border" href="/calendar">Cancel</a>
 
   <div class="form-group mb-3"></div>
-  <p>
-    <button class="btn btn-light btn-sm mb-3 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-      Commands list
-    </button>
-  </p>
-  <div style="min-height: 180px;">
-    <div class="collapse collapse-horizontal mb-3"  id="collapseWidthExample">
-      <div class="card card-body" style="width: 300px;">
-        Open calendar tab ... <br>
-        Open home tab... <br>
-        Add new event ... <br>
-        Change subject to... <br>
-        Add "person name" as a new attendee ... <br>
-        Change start date to ... <br>
-        Change end date to ... <br>
-        Body message is ... <br>
-        Create the new event ... <br>
-        Cancel new event ... <br>
-      </div>
+ <p>
+  <button class="btn bg-lightbluealan btn-sm mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Commands list
+  </button>
+</p>
+<div style="min-height: 140px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body bg-lightbluealan no-border" style="width: 300px;">
+      <ul>
+        <li>Open calendar tab ... </li>
+        <li>Open home tab... </li>
+        <li>Add new event ... </li>
+        <li>Change subject to... </li>
+        <li>Add "person name" as a new attendee ... </li>
+        <li>Change start date to ... </li>
+        <li>Change end date to ... </li>
+        <li>Body message is ... </li>
+        <li>Create the new event ... </li>
+        <li>Cancel new event ... </li>
+      </ul>
     </div>
   </div>
-  
-</form>
+</div>
 
 
 

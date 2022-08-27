@@ -7,3 +7,23 @@ body {
   word-break: break-all;
   white-space: pre-wrap;
 }
+
+.negrilla{
+  font-weight: bold;
+}
+
+#command-list{
+  background-color: #c8c8c8;
+}
+
+.bg-bluealan{
+  background-color: #061a5a;
+}
+
+.bg-lightbluealan{
+  background-color: #eaf1ff;
+}
+
+.no-border{
+  border: 0;
+}
