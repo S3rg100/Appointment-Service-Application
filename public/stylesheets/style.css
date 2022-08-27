@@ -7,3 +7,38 @@ body {
   word-break: break-all;
   white-space: pre-wrap;
 }
+
+.negrilla{
+  font-weight: bold;
+}
+
+#command-list{
+  background-color: #c8c8c8;
+}
+
+.bg-bluealan{
+  background-color: #061a5a;
+}
+
+.bg-lightbluealan{
+  background-color: #eaf1ff;
+}
+
+.no-border{
+  border: 0;
+}
+
+.image{
+  position: relative;
+  top: auto;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.re-size{
+  width: 578px;
+  margin-right: 0 auto;
+  display: inline-block;
+}
