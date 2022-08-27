@@ -27,3 +27,18 @@ body {
 .no-border{
   border: 0;
 }
+
+.image{
+  position: relative;
+  top: auto;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.re-size{
+  width: 578px;
+  margin-right: 0 auto;
+  display: inline-block;
+}
